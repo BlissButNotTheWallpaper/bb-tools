@@ -4,7 +4,17 @@
 echo ""
 echo "Updating packages ..."
 echo ""
+
+echo ""
+echo "This script assumes that you have Go already installed"
+echo ""
+
 sudo apt update
+
+
+#install essentials
+
+sudo apt install pip pipx 
 
 python_tools=(
 	"git+https://github.com/xnl-h4ck3r/waymore.git"
